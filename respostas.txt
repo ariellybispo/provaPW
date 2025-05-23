@@ -1,15 +1,23 @@
 1 - como foi feita a integração com API do ViaCEP ? 
 A integração foi feita usando a função fetch, que permite fazer requisições HTTP de forma assíncrona em JavaScript.
+
 2 - Como a imagem aleatória foi gerada? 
-A imagem é gerada usando a API do Unsplash, que fornece fotos aleatórias com base em palavras-chave.
+Acho que não consegui fazer a Api rodar.
+
 3 - Como voce utilizou o LocalSrorage?
-para salvar os dados dos voluntários em formato JSON. 
+para salvar os dados dos voluntários e o cepm em formato JSON.
+
 4 - Como voce organizou os cards na tela? 
-Organizei os cards com JavaScript, criando elementos HTML para cada voluntário e adicionando-os dentro de um container
+Organizei os cards com JavaScript, criando elementos HTML para cada voluntário e adicionando-os dentro de um container.
+
 5 - Como foi implementado o sistema de login e controle de acesso ?
 O sistema de login foi feito usando HTML para o formulário e JavaScript para validar as credenciais do usuário. 
+
 6 - Como foi feito o controle de e-mail duplicado?
 O controle de e-mail duplicado foi feito verificando, via JavaScript, se o e-mail já existia na lista de usuários cadastrados 
 antes de permitir o registro
+
 7 - Como foi implementado o redirecionamento após 5 minutos de inatividade?
+coloquei meu inatividade.js em tomas minahs paginas HTML.
+
 8 - O que voce faria se fosse um projeto real?

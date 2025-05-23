@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
         const data = await response.json();
         if (data.erro) {
+            
           alert("CEP não encontrado.");
           enderecoInput.value = "";
         } else {
@@ -71,22 +72,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   listarClientes();
+
   let timeout;
 
   function logoutUsuario() {
     alert("Sessão expirada por inatividade.");
-    window.location.href = "/login.html"; 
+    window.location.href = "login.html";
   }
 
   function resetarTemporizador() {
     clearTimeout(timeout);
-    timeout = setTimeout(logoutUsuario, 5 * 60 * 1000); 
+    timeout = setTimeout(logoutUsuario, 1 * 60 * 1000); 
   }
 
   window.addEventListener("load", resetarTemporizador);
 
   const eventos = ["mousemove", "keypress", "click", "scroll", "touchstart"];
+
   eventos.forEach(evento => {
     document.addEventListener(evento, resetarTemporizador);
   });
 });
+
+
