@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Voluntários</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin: 20px;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #14bddb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #14bddb;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Área dos Voluntários</h1>
+
+    <div class="container">
+        <div class="card">
+            <img src="img/voluntario.jpg" alt="Cadastro de Voluntário">
+            <a href="cadastroV.html">Cadastro de Voluntário</a>
+        </div>
+
+        <div class="card">
+            <img src="img/images.jpg" alt="Lista de Voluntários">
+            <a href="lista.html">Lista de Voluntários</a>
+        </div>
+    </div>
+
+</body>
+</html>

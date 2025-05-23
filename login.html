@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <h2>Acesse sua conta</h2>
+    <form onsubmit="verificarLogin(); return false;">
+      <label for="txtEmail">Email:</label>
+      <input type="email" id="txtEmail" name="txtEmail" required>
+
+      <label for="txtSenha">Senha:</label>
+      <input type="password" id="txtSenha" name="txtSenha" required>
+
+      <button type="submit">Entrar</button>
+
+      <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </form>
+  </div>
+  <script src="cadastro-login.js"></script>
+</body>
+</html>
+
